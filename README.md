@@ -8,6 +8,7 @@ Features
 - PaddleOCR recognition
 - Google Colab/kaggle 
 - Ready for webcam or RTSP camera
+
 Hardware for real time implementation 
 
 -rasperry modelB BCM2835 256MBRAM, 512MBROM(model server)
