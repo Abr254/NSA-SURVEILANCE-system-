@@ -9,6 +9,7 @@ Features
 - Google Colab/kaggle 
 - Ready for webcam or RTSP camera
 Hardware for real time implementation 
+
 -rasperry modelB BCM2835 256MBRAM, 512MBROM(model server)
 -Arduino Ref3 with ATmega328P (8-bit)(for hmi digital to analogue from raspberry)
 -HMI screen(18inch tft LCD display)
