@@ -11,31 +11,34 @@ Features
 
 Hardware for real time implementation 
 
--rasperry modelB BCM2835 256MBRAM, 512MBROM(model server)
--Arduino Ref3 with ATmega328P (8-bit)(for hmi digital to analogue from raspberry)
--HMI screen(18inch tft LCD display)
+- rasperry modelB BCM2835 256MBRAM, 512MBROM(model server)
+- Arduino Ref3 with ATmega328P (8-bit)(for hmi digital to analogue from raspberry)
+- HMI screen(18inch tft LCD display)
 Compute resources and modules
+
 -matplotlib(for visual assessment of model results)
 -tensorflow
 -numpy
 -ultralytics installed 
 -pandas
-compute 
->16gb ram
->1gb graphics card 
+Compute 
+
+- >16gb ram
+- >1gb graphics card 
 ```bash
 pip install -r requirements.txt
 ```
 ```bash
-python scripts/train.py
+python scripts/model.py
 ```
 ```bash
-python scripts/predict.py
+python scripts/paddl_ocr.py
 ```
 Description
 
 -YOLOv11 model=>accuracy 77% with 44 epochs which maxed out due to limited colab compute resources.
 -paddle OCR=> detection accuracy 88% with error rate highly contributed by unclean datasets, in contrast to realtime surveillance the model will surpass 98% accuracy.
+
 Dataset
 
-jagglehub.dataset_download("sujaymann/car-number-plate-dataset-yolo-format")
+- jagglehub.dataset_download("sujaymann/car-number-plate-dataset-yolo-format")
