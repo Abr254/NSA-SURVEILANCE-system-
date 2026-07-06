@@ -30,8 +30,10 @@ python scripts/train.py
 ```bash
 python scripts/predict.py
 ```
-#description
-YOLOv11 model=>accuracy 77% with 44 epochs which maxed out due to limited colab compute resources.
-paddle OCR=> detection accuracy 88% with error rate highly contributed by unclean datasets, in contrast to realtime surveillance the model will surpass 98% accuracy.
-#dataset
- kagglehub.dataset_download("sujaymann/car-number-plate-dataset-yolo-format")
+Description
+
+-YOLOv11 model=>accuracy 77% with 44 epochs which maxed out due to limited colab compute resources.
+-paddle OCR=> detection accuracy 88% with error rate highly contributed by unclean datasets, in contrast to realtime surveillance the model will surpass 98% accuracy.
+Dataset
+
+jagglehub.dataset_download("sujaymann/car-number-plate-dataset-yolo-format")
