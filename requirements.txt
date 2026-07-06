@@ -1,1 +1,12 @@
-jahhdh
+ultralytics
+paddleocr
+tensorflow
+opencv-python
+opencv-contrib-python
+numpy
+pandas
+matplotlib
+Pillow
+PyYAML
+scikit-learn
+kagglehub
