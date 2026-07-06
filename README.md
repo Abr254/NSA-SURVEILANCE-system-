@@ -16,11 +16,12 @@ Hardware for real time implementation
 - HMI screen(18inch tft LCD display)
 Compute resources and modules
 
--matplotlib(for visual assessment of model results)
--tensorflow
--numpy
--ultralytics installed 
--pandas
+- matplotlib(for visual assessment of model results)
+- tensorflow
+- numpy
+- ultralytics installed 
+- pandas
+
 Compute 
 
 - >16gb ram
