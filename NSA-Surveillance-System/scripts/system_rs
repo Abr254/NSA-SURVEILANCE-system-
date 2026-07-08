@@ -1,0 +1,18 @@
+use nokhwa::pixel_format::RgbFormat;
+use nokhwa::utils::{CameraIndex, RequestedFormat, RequestedFormatType};
+use nokhwa::Camera;
+
+fn main() {
+    let index = CameraIndex::Index(0);
+    let requested = RequestedFormat::new::<RgbFormat>(
+        RequestedFormatType::AbsoluteHighestFrameRate,
+    );
+    
+    let mut camera = Camera::new(index, requested).unwrap();
+    camera.open_stream().unwrap();
+    
+    let frame = camera.frame().unwrap();
+    let decoded = frame.decode_image::<RgbFormat>().unwrap();
+    
+    println!("Captured frame width/height: {}x{}", decoded.width(), decoded.height());
+}
